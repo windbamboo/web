@@ -1,0 +1,39 @@
+<div class="father">
+	<div class="son">
+		<p class="one">abc</p>
+		<p class="two">abc</p>
+		<span class="one">abc</span>
+		<span class="two">abc</span>
+	</div>
+	<dvi class="son1">
+		<p class="one">abc</p>
+		<p class="two">abc</p>
+		<span class="one">abc</span>
+		<span class="two">abc</span>
+	</div>
+</div>
+<p>abc</p>
+
+选择器：
+	p {}//标签选择器
+	.one {}//类选择器
+	#two{}//id选择器
+	*｛｝
+
+
+后代选择器：
+	.father p {}
+	.son p {}
+
+子选择器：（css3有很多浏览器不支持）直接子元素
+	.son>.one {}
+	father>.one {}
+
+并集选择器：
+	.son p , .son1 p｛｝
+	.one ,.two{}
+
+交集选择器：
+	
+	.son p.one{}
+	

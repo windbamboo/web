@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.father .son p {
+			color: red;
+		}/*后代选择器:我们在解读这一段标签的时候可以看作是去.father下面找.son元素，再找.son下面所有的p标签*/
+
+	</style>
+</head>
+<body>
+	<div class="father">
+		<p>喜羊羊</p>
+		<p>美羊羊</p>
+		<p>懒羊羊</p>
+		<div class="son">
+			<p>光头强</p>
+			<p>熊大</p>
+			<div>
+				<p>黑猫</p>
+			</div>
+		</div>
+	</div>
+	<p>熊二</p>
+</body>
+</html>
