@@ -3,6 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script>
+        // //接收输入的内容
+        // var a = prompt("请输入一段内容");
+        // //判断数据的类型：typeof
+        // console.log(typeof a );//string
+
+        //问题：用户输入一个数据，然后我们把这数字加一以后再输出
+        //var a = prompt("请输入一个数字");//将来在接收的时候都是string类型。
+        //var b = a + 1;//加号起到的作用是连加
+        // console.log(b);//
+        //将string转成number
+        //**********************1.0转Number********************
+//        var a = prompt("请输入一个数字");// a ="123"; a ="我是一个";
+//        console.log(typeof a);//string
+//        a = Number(a);//a =123;将原来的数据用Number(a)转换以后的结果来覆盖
+//        console.log(typeof a);//number
+//        a = Number(a);
+//        a += 1;
+//        console.log(a)
+        // alert("您输入的数字加一以后的值为:"+a);
+        //**********************2.0parseInt转换******************
+//         var a = "    123.456abc123";
+//         a = parseInt(a);//转成数字
+//         console.log(a);
+//         console.log(typeof(a));
+        //********************3.0parseFloat转换*******************
+//         var a = "123.123";
+//         a = parseFloat(a);//转成数字
+//         console.log(a);
+//         console.log(typeof(a));
+        //******************boolean转成Number的结果***********
+//         var a = false;//boolean中的true在内存中存储的时候用1表示，falsee用0;
+//         a = Number(a);
+//         console.log(a);
+//         console.log(typeof a );
+        //******************4.0字符串的.tostring转换
+//         var a = 123;
+//         a =  a.toString();
+//         console.log(a);
+//         console.log(typeof a );
+        //******************5.0字符串的String()转换
+         var a = true;
+         a =  String(a);
+         console.log(a);
+         console.log(typeof a );
+        //;*****************6.0boolean转换*********
+        //false、""（空字符串）、0、NaN、undefined
+        var a;
+        a = Boolean(a);
+        console.log(a);
+        console.log(typeof a);
+    </script>
 </head>
 <body>
 

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		//得到1到100相加的和 5050   (1 + 100)* 100 /2
+		// var a = 1;
+		// var he = 0;
+		// while ( a<=100 ){
+		// 	he += a;
+		// 	a ++ ;
+		// }
+		// alert("1-100的数相加的和是" + he);
+		// //老师讲一次，你会了吗？y/n,如果懂了就放学，如果不懂，再讲一次,一直将到明白为止。
+		// alert("追命给大家讲解题目");
+		// var mingbai = prompt("大家会了吗？y/n");//n
+		// while(mingbai=="n"){
+		// 	alert("追命给大家讲解题目");
+		// 	mingbai = prompt("大家会了吗？y/n");
+		// }
+		// alert("放学");
+		// //老师讲一次，你会了吗？y/n,如果懂了就放学，如果不懂，再讲一次,再次询问，如果还是不懂，再讲一次，如果连续三次都不懂，直接放学
+		// alert("追命给大家讲解题目");
+		// var mingbai = prompt("大家会了吗？y/n");
+		// //定义一个标识
+		// var bianshi = 1;
+		//多了一个连续三次不明白直接放学,只有在不懂并且次数小于三的时候才会讲解
+		// while(mingbai=="n" && bianshi <3){
+		// 	alert("追命给大家讲解题目");
+		// 	mingbai = prompt("大家会了吗？y/n");
+		// 	bianshi ++ ;
+		// }
+		// alert("放学");
+
+		//----------------------------------------------------------------------------
+		//输入用户名和密码，如果正确，提示正确，如果不对，一直输入:while
+		var yonghuming = prompt("请输入用户名");
+		var mima = prompt("请输入密码");
+		//如果要进入while循环必须保证用户名和密码中至少有一个是错
+		//如果在这里用&&,那么只有在用户是不等于admin，并且密码不等于8888的时候才会重新输入。
+		while( yonghuming!="admin" || mima!="888888" ){
+			alert("用户名或者密码有误");
+			yonghuming = prompt("请输入用户名");
+			mima = prompt("请输入密码");
+		}
+		alert("登录成功");
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

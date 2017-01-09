@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		//计算1到100的和，除掉所有个位上是9的数的和
+		// var a = 1;
+		// var he = 0;
+		// while(a <=100){
+		// 	if(a % 10 ==9){
+		// 		a++;//如果是9的话，这是不使用a++，会进入一个死循环
+		// 		continue;//立即结束本次循环，开始下一次循环。（如果现在是第九次，那么我们想要的是立即结束第九次循环，开始第十次循环。）
+		// 	} 
+		// 	else{
+		// 		he += a;
+		// 		a++;
+		// 	}
+		// 	console.log("到现在为止除掉个数是9的数字的和是："+he);
+		// }
+		// alert("一到一百除掉个数是9的数字的和是:"+he);
+		//得到1-5除掉所有个位上3的数的和
+		var a = 1;
+		var he = 0;
+		while( a<=5){
+			if(a % 10 ==3){
+				a ++;
+				continue;//立即结束本次循环，开始下一次循环。
+			}
+			else{
+				he +=a;
+				a++;
+			}
+			console.log("到现在为止和为："+he);
+		}
+		alert(he);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

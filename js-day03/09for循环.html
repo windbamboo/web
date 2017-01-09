@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		//得到1到100相加的和    循环体：
+		// var a = 1 ;
+		// var he = 0;
+		// while(a <=100){
+		// 	he += a;
+		// 	a++;
+		// }
+		// console.log(he);
+		var he = 0;
+		for(var i = 1 ; i <= 100 ; i++) {
+			he += i;
+		}
+		//当代码从上到下执行到for的时候，代码会先声明变量i并赋值1，会进行判断 var i = 1分号后面的判断，判断i是否小于等于100，执行下面的循环代码，当下面的代码执行完成之后，再回过来执行i++.这样就完成了一次循环，进行第二次循环，就不用再次声明i，只需要判断i是否小于等于100就行了，如果满足，执行下面的代码，再回来i++;
+		console.log(he);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

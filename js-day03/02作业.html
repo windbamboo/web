@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		//一个加油站为了鼓励车主多加油，所以加的多有优惠。
+		// 92号汽油，每升6元；如果大于等于20升，那么每升5.9；
+		// 97号汽油，每升7元；如果大于等于30升，那么每升6.95
+		// 编写JS程序，用户输入自己的汽油编号，然后输入自己加多少升，弹出价格。
+		// var qiyoubianhao = prompt("请输入汽油编号");
+		// var sheng = prompt("请输入你要加多少升");
+		// if(qiyoubianhao == "92"){
+		// 	if(sheng >= 20){
+		// 		alert("汽油5.9元一升");
+		// 	}
+		// 	else {
+		// 		alert("汽油6元一升");
+		// 	}
+		// }
+		// else if(qiyoubianhao == "97")  {
+		// 	if(sheng >= 30) {
+		// 		alert("汽油6.95元一升");
+		// 	}
+		// 	else {
+		// 		alert("汽油7元一升");
+		// 	}
+		// }
+		// else {
+		// 	alert("您输入的汽油我没见过");
+		// }
+		// 		得到五个同学的平均成绩，如果大于等于90为优秀，小于90大于等于80为良好，小于80大于等于70为一般，小于70大于等于60为较差，小于60为很差
+		// 用swich_case  if-elseif -else
+		var yi = prompt("第一个同学的成绩");
+		var er = prompt("第二个同学的成绩");
+		var san = prompt("第三个同学的成绩");
+		var si = prompt("第四个同学的成绩");
+		var wu = prompt("第五个同学的成绩");
+		var pj = (+yi + +er + +san + +si + +wu)/5;
+		//通过改pj分的表现形式：
+		var jt = Math.floor( pj / 10 );
+		//      >= 90       优秀  99 - 90  除以10 ==》9.？ 向下取整   ==》9
+		//    90>    >=80   良好  89 - 80  除以10 ==》8.？ 向下取整   ==》8
+		//    80 >    >=70  一般
+		//    70 >    >= 60 较差
+		//     60>          很差
+		switch (jt){
+			case 10:
+				alert("优秀");
+				break;
+			case 9:
+				alert("优秀");
+				break;
+			case 8:
+				alert("良好");
+				break;
+			case 7:
+				alert("一般");
+				break;
+			case 6:
+				alert("较差");
+				break;
+			default :
+				alert("很差");
+				break;
+		}
+	</script>
+
+</head>
+<body>
+	
+</body>
+</html>

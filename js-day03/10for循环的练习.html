@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		//*求13的阶乘
+		// var ji = 1;
+		// for(var i = 1 ; i <= 13 ; i ++){
+		// 	ji *= i;
+		// }
+		// console.log(ji);
+
+
+		//**得到100到999的所有水仙花数
+		//百位上的数的立方+十位上数的立方+个位上数的立方=自己
+		// var shuliang = 0;
+		// for(var i = 100 ; i <= 999 ; i++){
+		// 	//得到当前数的百位数
+		//     var bai = Math.floor(i / 100);
+		//     var shi = Math.floor( i % 100 / 10);
+		//     var ge = i % 10;
+		//     var he = Math.pow(bai,3)+Math.pow(shi,3)+Math.pow(ge,3);
+		//     if(he == i){
+		//     	console.log(i);
+		//     	shuliang ++;
+		//     }
+		// }
+		// console.log(shuliang);
+
+
+		//******得到100以及的所有质数
+		//固定第一个会变化的数字1-100中的n  双重for循环
+		for(var n = 1; n <= 100; n++){
+			//固定第二个会变化的数字就是第一个会变化数字所有要除的数。n 5  m 2 3 4
+			//n 6 m 2,3,4,5
+			for(var m = 2; m <= n-1 ; m++ ){
+				//判断m是否可以被n整除，如果可以说明n是不是一个质数
+				if(n % m == 0){
+					break;
+				}
+			}
+			if(m==n){
+				console.log("这个是质数："+m);
+			}
+		}
+
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
